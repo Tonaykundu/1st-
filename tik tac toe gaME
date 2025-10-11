@@ -1,0 +1,120 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNQgGE3GNKzI9lJWN5QWZgF",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Tonaykundu/1st-/blob/main/tik%20tac%20toe%20gaME\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "2DRHe6ObhBSC"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "Binel7_3h5ZR"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "LBx75aGRh5VV"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "queue=deque([board])\n",
+        "visited={\n",
+        "    board:0\n",
+        "}\n",
+        "solution=False"
+      ],
+      "metadata": {
+        "id": "IECw9er-k7pq"
+      },
+      "execution_count": 7,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from collections import deque\n",
+        "\n",
+        "board=(1,5,6,4,7,3,8,2,9)\n",
+        "goal=(1,2,3,4,5,6,7,8,0)"
+      ],
+      "metadata": {
+        "id": "cPKTLW05h5Q6"
+      },
+      "execution_count": 8,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while queue:\n",
+        "  node =queue.popleft()\n",
+        "  depth=visited[board]\n",
+        "  print(\"current node:\",node)\n",
+        "  print(\"current depth:\",depth)\n",
+        "  if node == goal:\n",
+        "     print(\"goalnode\",node)\n",
+        "     print(\"goaldepth\",depth)\n",
+        "     print(\"goal found\")\n",
+        "     solution=true\n",
+        "     break"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6kaVn1SqkW2K",
+        "outputId": "018607b7-1a0d-429d-e9a2-3ccbd3569607"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "current node: (1, 5, 6, 4, 7, 3, 8, 2, 9)\n",
+            "current depth: 0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
